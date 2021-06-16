@@ -1,6 +1,15 @@
 <template>
-  <div class="bg-fixed w-screen h-screen bg-cover" :style="{ backgroundImage: `url(${image})`}">
-
+  <div>
+    <div class="bg-fixed w-screen h-screen bg-cover" :style="{ backgroundImage: `url(${image})`}">
+      <div class="hero-inner w-full h-full flex flex-col justify-center content-center">
+        <div class="flex justify-center content-center">
+          <p class="text-9xl font-sans">Hello</p>
+        </div>
+        <div class="flex justify-center justify-items-stretch">
+          <button class="rounded-full bg-gradient-to-br from-purple-300 to-purple-900 px-6 py-3">Option 1</button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
