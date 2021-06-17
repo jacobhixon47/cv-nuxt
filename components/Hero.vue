@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <div class="bg-fixed w-screen h-screen bg-cover" :style="{ backgroundImage: `url(${image})`}">
-      <div class="hero-inner w-full h-full flex flex-col justify-center content-center">
-        <div class="flex justify-center content-center">
-          <p class="text-9xl font-sans">Hello</p>
+  <div class="hero px-10 py-20 h-screen">
+    <div class="w-full h-full bg-cover rounded-2xl bg-blend-hue bg-indigo-600 bg-opacity-60" :style="{ backgroundImage: `url(${image})`}">
+      <div class="hero-inner w-full h-full flex flex-col justify-center content-center gap-20">
+        <div class="flex flex-col justify-center align-center">
+          <p class="text-9xl font-sans font-black text-blue-100 text-center">GET THE DEVELOPMENT</p>
+          <p class="text-9xl font-sans font-black text-indigo-400 text-center">YOU NEED.</p>
         </div>
-        <div class="flex justify-center justify-items-stretch">
-          <button class="rounded-full bg-gradient-to-br from-purple-300 to-purple-900 px-6 py-3">Option 1</button>
+        <div class="flex justify-center gap-20">
+          <button class="text-xl rounded-lg bg-blue-100 px-20 py-5 text-indigo-400 font-semibold">Contact</button>
+          <button class="text-xl rounded-lg bg-indigo-400 px-20 py-5 text-white font-semibold bg-opacity-50 transition hover:bg-opacity-100 duration-500 ease-in-out">Projects</button>
         </div>
       </div>
     </div>
@@ -34,12 +36,14 @@ if (now <= 20 || now >= 5) {
   export default {
     data() {
       return {
-        image: currentImg,
+        image: dayOneImg,
       }
     }
   }
 </script>
 
 <style scoped>
-
+  .hero {
+    background: linear-gradient(to bottom, #fff 50%, #f3f4f6 50%);
+  }
 </style>
