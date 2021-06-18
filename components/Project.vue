@@ -1,5 +1,5 @@
 <template>
-  <div class="project grid grid-cols-1 grid-rows-4 bg-gradient-to-b from-blue-300 to-indigo-500 rounded-xl p-10 gap-5">
+  <div class="project grid grid-cols-1 grid-rows-4 bg-gradient-to-b from-blue-300 to-indigo-500 rounded-xl p-10 gap-5 relative z-0">
     <!-- <img 
       :src="require(`@/assets/${project.image || 'day-1.jpg'}`)" 
       alt="project image"
