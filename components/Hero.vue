@@ -1,7 +1,7 @@
 <template>
-  <div class="hero px-10 py-20 h-screen">
-    <div class="w-full h-full bg-cover rounded-2xl bg-blend-hue bg-indigo-600 bg-opacity-60" :style="{ backgroundImage: `url(${image})`}">
-      <div class="hero-inner w-full h-full flex flex-col justify-center content-center gap-20">
+  <div class="hero px-10 py-20 pb-0 h-full">
+    <div class="w-full h-full bg-cover rounded-2xl bg-blend-hue bg-indigo-600 bg-opacity-60 py-40" :style="{ backgroundImage: `url(${image})`}">
+      <div class="hero-inner w-full h-full flex flex-col justify-around content-center gap-10">
         <div class="flex flex-col justify-center align-center">
           <p class="text-9xl font-sans font-black text-blue-100 text-center">GET THE DEVELOPMENT</p>
           <p class="text-9xl font-sans font-black text-indigo-400 text-center">YOU NEED.</p>
