@@ -1,5 +1,5 @@
 <template>
-  <div id="projects" class="w-full p-10 flex gap-5">
+  <div id="projects" class="w-full p-10 flex gap-5 bg-gray-700">
     <Project 
       v-for="project in projects"
       :key="project.id"
@@ -20,7 +20,7 @@ import { mapState } from 'vuex'
 </script>
 
 <style scoped>
-  #projects {
+  /* #projects {
     background-color: #f3f4f6;
-  }
+  } */
 </style>

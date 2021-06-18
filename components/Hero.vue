@@ -1,5 +1,5 @@
 <template>
-  <div class="hero px-10 py-20 pb-0 h-full">
+  <div class="hero px-10 py-20 pb-0 h-full bg-gray-700">
     <div class="w-full h-full bg-cover rounded-2xl bg-blend-hue bg-indigo-600 bg-opacity-60 py-40" :style="{ backgroundImage: `url(${image})`}">
       <div class="hero-inner w-full h-full flex flex-col justify-around content-center gap-10">
         <div class="flex flex-col justify-center align-center">
@@ -43,7 +43,7 @@ if (now <= 20 || now >= 5) {
 </script>
 
 <style scoped>
-  .hero {
+  /* .hero {
     background: linear-gradient(to bottom, #fff 50%, #f3f4f6 50%);
-  }
+  } */
 </style>
