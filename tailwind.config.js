@@ -23,8 +23,11 @@ module.exports = {
       zIndex: {
         '-1': '-1',
         '-2': '-2'
-      }
-    },
+      },
+      fontSize: {
+        'huge': '20rem',
+      },
+    }
   },
   variants: {
     extend: {},

@@ -45,8 +45,8 @@
         <p class="hero-bottom-text text-6xl font-sans font-black text-purple-500 text-center opacity-0">YOU NEED.</p>
       </div>
       <div class="flex justify-center gap-20">
-        <button class="hero-btn-left text-xl rounded-lg bg-indigo-100 px-20 py-5 text-purple-500 font-semibold opacity-0">Contact</button>
-        <button class="hero-btn-right text-xl rounded-lg bg-purple-500 px-20 py-5 text-indigo-100 font-semibold opacity-0">Projects</button>
+        <button class="hero-btn text-xl rounded-lg px-20 py-5 text-purple-500 font-semibold opacity-0 bg-indigo-100">Contact</button>
+        <button class="hero-btn text-xl rounded-lg px-20 py-5 text-indigo-100 font-semibold opacity-0 bg-purple-500">Projects</button>
       </div>
     </div>
   </div>
@@ -145,12 +145,8 @@ if (now <= 20 || now >= 5) {
     animation: 0.75s ease-in-out 1.25s 1 fadeInUp forwards;
   }
 
-  .hero-btn-right {
-    animation: 0.75s ease-in-out 1.5s 1 fadeInLeft forwards;
-  }
-
-  .hero-btn-left {
-    animation: 0.75s ease-in-out 1.75s 1 fadeInLeft forwards;
+  .hero-btn {
+    animation: 0.75s ease-in-out 1.5s 1 fadeInUp forwards;
   }
 
   .left-stripe-fast {  

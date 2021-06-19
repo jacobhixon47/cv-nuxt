@@ -23,7 +23,7 @@ export const state = () => ({
       title: "Grace Financial Services",
       description: "Full website rebuild",
       modifiedSince: true,
-      image: "gfs.jpg"
+      image: "day-3.jpg"
     },
     {
       id: 2,
