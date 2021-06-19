@@ -58,6 +58,10 @@
       border-bottom: 0px;
       @apply bg-gray-600;
       transition: all 0.5s ease-in-out;
+      @apply bg-clip-padding;
+      @apply backdrop-filter; 
+      @apply backdrop-blur-xl;
+      @apply bg-opacity-60;
   }
 
 </style>

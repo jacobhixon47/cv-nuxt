@@ -1,14 +1,7 @@
 <template>
-  <div class="project grid grid-cols-1 grid-rows-4 gap-2 bg-gray-700 relative z-0 w-full">
-    <!-- <img 
-      :src="require(`@/assets/${project.image || 'day-1.jpg'}`)" 
-      alt="project image"
-      class="rounded-xl row-span-3 col-span-1"
-    > -->
-    <div class="project-img row-span-3" :style="{ backgroundImage: `url(${imgUrl})`}">
-
-    </div>
-    <div class="p-5 bg-gray-600">
+  <div class="project flex justify-end items-end gap-2 bg-gray-700 relative w-full h-full p-10 z-10 rounded-xl" :style="{ backgroundImage: `url(${imgUrl})`}">
+    <div class="overlay"></div>
+    <div class="project-info p-5 bg-indigo-100 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-30 rounded-xl w-1/3">
       <p class="text-xl text-indigo-100 font-bold">{{ project.title }}</p>
       <p class="text-lg text-indigo-100 italic font-semibold">{{ project.description }}</p>
       <!-- <br>
@@ -38,12 +31,52 @@
 
 <style scoped>
 
-.project-img {
-  background-position: center center;
+.project {
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.8); 
+  box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.8);
+}
+
+.project {
+  flex: 1;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  background-size: 100%;
   position: relative;
+  transition: all 0.5s ease-in-out, background-position 3s ease-in;
+}
+
+.overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  background-color:#000;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+  @apply rounded-xl;
+}
+
+.project .project-info {
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.project:hover {
+  flex-grow: 10;
+  background-position: bottom center;
+  transition: background-position 15s ease-out, flex-grow .5s ease-in;
+}
+
+.project:hover > .project-info {
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+
+.project:hover > .overlay {
+    opacity:0.3;
+    transition: all 0.5s ease-in-out;
 }
 
 </style>

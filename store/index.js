@@ -21,23 +21,23 @@ export const state = () => ({
     {
       id: 1,
       title: "Grace Financial Services",
-      description: "Full website rebuild",
+      description: "Full website build",
       modifiedSince: true,
-      image: "day-3.jpg"
+      image: "gfs-full.png"
     },
     {
       id: 2,
       title: "Transcard",
-      description: "Hubspot website redesign (first version)",
+      description: "Hubspot website redesign",
       modifiedSince: true,
-      image: "transcard.jpg"
+      image: "transcard-full.png"
     },
     {
       id: 3,
       title: "Fowler Brothers Co.",
       description: "Shopify webstore build",
       modifiedSince: false,
-      image: "fowler-brothers.jpg"
+      image: "fowler-full.png"
     },
   ]
 })
