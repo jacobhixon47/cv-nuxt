@@ -32,18 +32,15 @@
 <style scoped>
 
 .project {
-  transition: all 0.5s ease-in-out;
-  -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.8); 
-  box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.8);
-}
-
-.project {
   flex: 1;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.8); 
+  box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.8);
   transition: all 0.5s ease-in-out, background-position 3s ease-in;
+  
 }
 
 .overlay {
@@ -66,7 +63,7 @@
 .project:hover {
   flex-grow: 10;
   background-position: bottom center;
-  transition: background-position 15s ease-out, flex-grow .5s ease-in;
+  transition: background-position 20s ease-out, flex-grow .5s ease-in;
 }
 
 .project:hover > .project-info {

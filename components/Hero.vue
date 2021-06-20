@@ -17,7 +17,7 @@
 
   <div class="hero h-screen bg-gray-700">
     <div class="absolute bottom-0 top-0 w-full h-full">
-      <div class="w-full h-full transform -skew-y-12 z-0">
+      <div class="grid-container w-full h-full transform -skew-y-12 z-0">
         <div class="bg-grid grid w-full absolute -bottom-10 bg-gray-600 -z-1">
           <div class="stripe opacity-0 left-stripe-fast col-span-2 row-span-1 row-start-9 col-start-1 bg-blue-400"></div>
           <div class="stripe opacity-0 left-stripe-slow col-span-3 row-span-1 row-start-12 col-start-1 bg-indigo-100"></div>
@@ -41,8 +41,8 @@
     </div>
     <div class="absolute hero-content skew-y-12 h-full w-full flex flex-col content-start justify-center pb-40 gap-10">
       <div class="flex flex-col justify-center align-center">
-        <p class="hero-top-text text-6xl font-sans font-black text-indigo-100 text-center opacity-0">GET THE DEVELOPMENT</p>
-        <p class="hero-bottom-text text-6xl font-sans font-black text-purple-500 text-center opacity-0">YOU NEED.</p>
+        <p class="hero-top-text text-6xl font-sans font-black text-indigo-100 text-center opacity-0">Get the development</p>
+        <p class="hero-bottom-text text-6xl font-sans font-black text-purple-500 text-center opacity-0">you need.</p>
       </div>
       <div class="flex justify-center gap-20">
         <button class="hero-btn text-xl rounded-lg px-20 py-5 text-purple-500 font-semibold opacity-0 bg-indigo-100">Contact</button>
@@ -131,6 +131,8 @@ if (now <= 20 || now >= 5) {
     /* .hero {
     background: linear-gradient(to bottom, #fff 50%, #f3f4f6 50%);
   } */
+
+
   .bg-grid {
     grid-template-rows: repeat(16, minmax(0, 1fr));
     grid-template-columns: repeat(14, minmax(0, 1fr));
