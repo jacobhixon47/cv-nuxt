@@ -1,12 +1,14 @@
 <template>
-  <div id="projects" class="w-full relative p-10 pt-0 flex-col gap-0 justify-start items-center bg-gray-700 transform -skew-y-12">
-    <p class="projects-title w-full text-huge rounded-lg py-5 text-gray-700 font-black text-right transform skew-y-12">work.</p>
-    <div class="projects-container flex transform skew-y-12 w-full h-1/5 z-20 gap-5">
-      <Project 
-        v-for="project in projects"
-        :key="project.id"
-        :project="project"
-      />
+  <div class="bg-gray-700">
+    <div id="projects" class="w-full relative p-10 pt-0 flex-col gap-0 justify-start items-center bg-gray-700 transform -skew-y-12">
+      <p class="projects-title w-full text-huge rounded-lg py-5 text-gray-700 font-black text-right transform skew-y-12">work.</p>
+      <div class="projects-container flex transform skew-y-12 w-full h-1/2 z-20 gap-5">
+        <Project 
+          v-for="project in projects"
+          :key="project.id"
+          :project="project"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -24,7 +26,7 @@ import { mapState } from 'vuex'
 
 <style scoped>
   #projects {
-    height: 200vh;
+    height: 100vh;
   }
 
 .projects-title {
