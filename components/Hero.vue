@@ -18,7 +18,7 @@
   <div class="hero h-screen bg-gray-700">
     <div class="absolute bottom-0 top-0 w-full h-full">
       <div class="grid-container w-full h-full transform -skew-y-12 z-0">
-        <div class="bg-grid grid w-full absolute -bottom-10 bg-gray-600 -z-1">
+        <div class="bg-grid grid w-full absolute -bottom-10 bg-gradient-to-br from-gray-500 to-gray-700 -z-1">
           <div class="stripe opacity-0 left-stripe-fast col-span-2 row-span-1 row-start-9 col-start-1 bg-blue-400"></div>
           <div class="stripe opacity-0 left-stripe-slow col-span-3 row-span-1 row-start-12 col-start-1 bg-indigo-100"></div>
           <div class="stripe opacity-0 left-stripe-fast col-span-3 row-span-1 row-start-13 col-start-2 bg-purple-400"></div>
@@ -138,6 +138,10 @@ if (now <= 20 || now >= 5) {
     grid-template-columns: repeat(14, minmax(0, 1fr));
     height: 130%;
   }
+
+  /* .stripe {
+    box-shadow: 11px 12px 22px -10px rgba(0,0,0,0.6)
+  } */
 
   .hero-top-text {
     animation: 0.75s ease-in-out 1s 1 fadeInUp forwards;
